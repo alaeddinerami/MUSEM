@@ -7,6 +7,9 @@
     overflow-x: hidden;
     font-family: "tillana", sans-serif;
 }
+body{
+    background-color: #FFF8E3;
+}
 h2{
     font-weight: 500;
     font-size: 34px;
@@ -18,10 +21,11 @@ h3{
 .hero_area{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/tajine.jpg);
     background-size: cover;
+    height: 100vh;
 }
 .header-section{
     color: white;
-    height: 100vh;
+    /* height: 100vh; */
 }
 
 #navbar{
@@ -134,35 +138,255 @@ h3{
 }
 .artistes-photos h3{
     font-size: 18px;
+    
 }
 
 #nos-arts{
-    background-color: #FFF8E3;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-
 }
-
-.area{
-    width: 70%;
-}
-
-#images-area{
+#images-area {
+    width: 80%;
     display: grid;
-    grid-gap: 2em;
-    grid-template-areas: 
-    "image1 image1 image2 image3"
-    "image1 image1 image4 image5";
+    grid-template-columns: repeat(4, minmax(150px, 1fr)); /* Create a responsive grid */
+    gap: 10px; /* Adjust the gap between grid items as needed */
 }
 
-#images-area > div{
-    border: 2px black solid;
+.image {
+    overflow: hidden; /* Clip images within the grid cell */
 }
 
+.image img {
+    border-radius: 10px;
+    width: 100%; /* Make images take up the full width of the grid cell */
+    height: 100%; /* Make images take up the full height of the grid cell */
+    object-fit: cover; /* Adjust how the image is displayed within the cell */
+}
 #images-area > div:first-child{
-    grid-area: image1;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+footer{
+    color: white;
+    background-image: linear-gradient(rgba(0 ,0 ,0 ,0.8),rgba(0 ,0 ,0 ,0.8)),url(images/footer-image.webp);
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.footer-li a{
+    height: 50px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    display: block;
+    justify-content: space-between;
+}
+
+.contact a{
+    height: 50px;
+    display: block;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-container{
+    margin-top: 5%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*..........ATELIER..........*/
+.hero_area-atelier{
+    background-image: url(images/atelier-image.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#atelier-page2{
+    height: 140vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+#title-atelier2 h2{
+    display: flex;
+    justify-content: center;
+} 
+
+#title-atelier2 pre{
+    font-size: 22px;
+} 
+.atelier-photos{
+    width: 30vw;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+} 
+#horaires-visite{
+}
+.times{
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+.form-disign{
+    background-color: #D2F2FF;
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    height: 50px;
+}
+
+#registration-form {
+    height: 400PX;
+    width: 400px;
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#registration-form ::placeholder{
+    padding-left: 3%;
+    color: black;
+}
+
+ .reserve-button{
+    background-color: #D2F2FF;
+    border: none;
+    border-radius: 10px;
+    width: 170px;
+    height: 50px;
+    cursor: pointer;
+    margin-bottom: 5%;
+}
+
+#iframe-reserve{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+}
+
+/*..............galerie..........*/
+.hero_area-galerie{
+    height: 70vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/galerie-header.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.text-header-galerie h1{
+    padding-top: 1em;
+    font-size: 86px;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+#galerie-islamicage{
+    padding-top: 5%;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+#galerie-islamicage > div:first-child{
+    width: 600px;
+    height: 400px;
+    overflow: hidden;
+}
+#galerie-islamicage h2{
+    padding-left: 2em;
+}
+#galerie-islamicage p{
+    padding-top: 5%;
+    font-size: 30px;
+}
+#page2 img{
+    width: 500px;
+    height: 95vh;
+}
+.image2{
+    width: 500px;
+    height: 40vh;
+}
+
+.images4{
+    width: 245px;
+    height: 25vh;
+}
+
+#galerie-images{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+#video{
+    display: flex;
+    justify-content: center;
+}
+#video iframe{
+    margin-top: 5%;
+    width: 70%;
+    margin-bottom: 5%;
+}
+.FAQ{
+    max-width: 600px;
+}
+
+.FAQ .contentFAQ{
+    position: relative;
+    margin: 10px 20px;
+
+}
+
+.FAQ .contentFAQ .label{
+    position: relative;
+    padding: 10px;
+    background: #D2F2FF;
+    color: black;
+    cursor: pointer;
+}
+.FAQ .contentFAQ .label::before{
+   content: '⋁'; 
+   position: absolute;
+   top: 50%;
+   right: 20px;
+   transform: translateY(-50%);
+   font-size: 1.5em;
+}
+.FAQ .contentFAQ .content{
+    position: relative;
+    background: #D2F2FF;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.FAQ .contentFAQ.active .content{
+    height: 90px;
+}
+
+#FAQ{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#image-FAQ{
+    display: flex;
+    align-items: center;
+}
+#FAQ-image{
     height: 300px;
 }

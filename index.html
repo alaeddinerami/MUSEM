@@ -11,12 +11,14 @@
       <div class="hero_area">
         <nav id="navbar">
           <div class="logo">
-            <a href="#"><img src="images/MUCEM-logo.png" alt="logo" /></a>
+            <a href="index.html"
+              ><img src="images/MUCEM-logo.png" alt="logo"
+            /></a>
           </div>
           <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Galerie</a></li>
-            <li><a href="#">Atelier</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="atelier.html">Atelier</a></li>
           </ul>
         </nav>
         <div class="text-header">
@@ -83,17 +85,83 @@
       </section>
       <section id="nos-arts">
         <h2>Nos arts</h2>
-        <div class="area">
-          <div id="images-area">
-            <div><img src="" alt="" /></div>
-            <div><img src="images/" alt="" /></div>
-            <div><img src="images/" alt="" /></div>
-            <div><img src="images/" alt="" /></div>
-            <div><img src="images/" alt="" /></div>
+        <div id="images-area">
+          <div class="image"><img src="images/image1.webp" alt="" /></div>
+          <div class="image"><img src="images/image2.jpg" alt="" /></div>
+          <div class="image"><img src="images/image3.jpg" alt="" /></div>
+          <div class="image"><img src="images/image4.jpg" alt="" /></div>
+          <div class="image"><img src="images/imag5.jpg" alt="" /></div>
+        </div>
+      </section>
+      <section id="FAQ">
+        <h2>FAQ</h2>
+        <div id="image-FAQ">
+          <div class="FAQ">
+            <div class="contentFAQ">
+              <div class="label">How much does a ticket cost?</div>
+              <div class="content">
+                <p>
+                  For Children: Tickets for children, if available, are often
+                  priced at a lower rate, ranging from $20 to $50, For Adults:
+                  Museum tickets for adults typically range from $10 to $30,
+                </p>
+              </div>
+            </div>
+            <div class="contentFAQ">
+              <div class="label">
+                Can you tell me about the history of the museum?
+              </div>
+              <div class="content">
+                <p>
+                  For Children: Tickets for children, if available, are often
+                  priced at a lower rate, ranging from $20 to $50, For Adults:
+                  Museum tickets for adults typically range from $10 to $30,
+                </p>
+              </div>
+            </div>
+
+            <div class="contentFAQ">
+              <div class="label">
+                How do the museum staff choose or curate the exhibits?
+              </div>
+              <div class="content">
+                <p>
+                  For Children: Tickets for children, if available, are often
+                  priced at a lower rate, ranging from $20 to $50, For Adults:
+                  Museum tickets for adults typically range from $10 to $30,
+                </p>
+              </div>
+            </div>
+            <script>
+              const FAQ = document.getElementsByClassName
+              ('contentFAQ')
+              for(i = 0; i< FAQ.length; i++ ){
+                FAQ[i].addEventListener('click', function(){
+                  this.classList.toggle('active')
+                })
+              }
+            </script>
           </div>
+          <div class="FAQ-image"><img src="images/FAQ.png" alt=""></div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-li">
+          <a href="#">Accueil</a>
+          <a href="#">Galerie</a>
+          <a href="#">Atelier</a>
+        </div>
+        <div class="contact">
+          <a href="#">MUCEM@gmail.com</a>
+          <a href="#">Tel:+212 543547686</a>
+        </div>
+        <div class="logo">
+          <a href=""><img src="images/MUCEM-logo.png" alt="logo" /></a>
+        </div>
+      </div>
+      <p class="copyright">© 2023 Mucem. All Rights Reserved.</p>
+    </footer>
   </body>
 </html>
