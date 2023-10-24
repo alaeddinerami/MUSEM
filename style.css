@@ -21,19 +21,24 @@ h3{
 .hero_area{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(images/tajine.jpg);
     background-size: cover;
-    height: 100vh;
+    height: auto;
 }
 .header-section{
     color: white;
-    /* height: 100vh; */
+    
 }
-
+.activ{
+    border-bottom: 2px solid white;
+}
 #navbar{
-    padding-left: 62px;
+    padding-left: 5%;
     display: flex;
     justify-content: center;
     justify-content: space-between;
     width: 100vw;
+}
+.burger{
+    display: none;
 }
 
 .logo a img{ 
@@ -41,18 +46,18 @@ h3{
     height: 100px;
 }
 #navbar ul{  
-    padding-right: 62px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 50vw;
 }
 
 #navbar li{
+    height: 30%;
     list-style: none;
 }
 #navbar a{
-    font-size: 20px;
+    font-size: 18px;
     color: white;
     text-decoration: none;
 }
@@ -65,6 +70,7 @@ h3{
 .text-header h1{
     font-size: 50px;
     font-weight: 300;
+
     display: flex;
     justify-content: center;
 }
@@ -77,6 +83,7 @@ h3{
     color: white;
     padding: 15px 20px 15px;
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .horaires{
@@ -107,32 +114,34 @@ h3{
 
 .nos-artistes{
     background-color: #FFF8E3;
-    height: 80vh;
+    height: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 
 }
 .artistes-photos-container{
-    width: 85vw;
-    height: 50vh;
+    width: 85%;
+    height: 65%;
     display: flex;
     justify-content: space-between;
 }
 .artistes-photos{
-    width: 27vw;
-    height: 50vh;
+    width: 32%;
+    height: 100%;
     background-color: #EAF9FF;
     border-radius: 20px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
 
 }
 .artistes-photos img{
     margin-top: 5%;
-    width: 300px;
+    width: 90%;
     height: 200px;
     border-radius: 10px;
 }
@@ -142,11 +151,12 @@ h3{
 }
 
 #nos-arts{
+    padding-top: 3%;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 #images-area {
     width: 80%;
@@ -233,8 +243,7 @@ footer{
     flex-direction: column;
     align-items: center; 
 } 
-#horaires-visite{
-}
+
 .times{
     width: 80vw;
     display: flex;
@@ -389,4 +398,122 @@ footer{
 }
 #FAQ-image{
     height: 300px;
+}
+
+@media only screen and (max-width:767px) {
+    /* .burger{
+        display: block;
+        cursor: pointer;
+        padding: 20px 5%;
+    }
+    .burger .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 5px;
+    }
+    ul {
+        display: none;
+        position: absolute;
+        right:0px;
+        height: 30vh;
+        top: 10vh;
+        background-color: #00709C;
+        /* display: flex;
+        flex-direction: column;
+        
+        
+    }
+    .Dnav.active{
+        height: 30vh;
+        width: 100%;
+    }
+    #navbar li a{
+        color: #000000;
+        height: 30vh;
+    } */ 
+    h2{
+        font-size: 22px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .jour p{
+        font-size: 16px;
+    }
+    .text-header h1{
+        font-size: 18px;
+        font-weight: 300;
+        display: flex;
+        justify-content: center;
+    }
+    .text-header a{
+        font-size: 20px;
+        text-decoration: none;
+        background-color: #00709C;
+        border-radius: 30px;
+        color: white;
+        padding: 15px 20px 15px;
+        text-align: center;
+    }
+    .horaires{
+        background-color: #EAF9FF;
+        height: auto;
+        height: 300px;
+    }
+    
+    .temps{
+        width: 80%;
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        height:60%;
+        grid-gap: 10px;
+        
+    }
+    .artistes-photos-container {
+        gap: 10px;
+        display: flex;
+        flex-direction: column;   
+        align-items: center;
+    }
+    .artistes-photos{
+        width: 90%; 
+    }
+    .artistes-photos img{
+        margin-top: 5%;
+        width: 90%;
+        height: 200px;
+        border-radius: 10px;
+    }
+    #nos-arts{
+        height: auto;
+    }
+    #images-area{
+        padding-top: 10%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    /* #FAQ{
+        height: 1000px;
+    } */
+    #image-FAQ{
+        display: flex;
+        flex-direction: column;
+    }
+    .FAQ-image img{
+        width: 200px;
+        height: 200px;
+    }
+    .footer-container{
+        width: 80%;
+    }
+    footer{
+        font-size: 12px;
+       height: 30vh;
+    }
+    footer .logo img{
+        width: 100px;
+        height: 100px;
+    }
 }
