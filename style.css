@@ -4,11 +4,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    overflow-x: hidden;
+   
     font-family: "tillana", sans-serif;
+}
+html{
+   overflow-x: hidden;  
 }
 body{
     background-color: #FFF8E3;
+    
 }
 h2{
     font-weight: 500;
@@ -37,15 +41,30 @@ h3{
     justify-content: space-between;
     width: 100vw;
 }
-.burger{
+/* burger */
+.burger {
+    color: #fff;
+    border: none;
+    background: none;
+    cursor: pointer;
     display: none;
-}
+    z-index: 2;
+  }
+  .icon-nav {
+    height: 3.4rem;
+    width: 3.4rem;
+  }
+  .icon-nav[name="close-outline"] {
+    display: none;
+  }
+/*.........*/
 
 .logo a img{ 
     width: 150px;
     height: 100px;
 }
 #navbar ul{  
+    padding-top: 5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -222,7 +241,7 @@ footer{
     background-position: center;
 }
 #atelier-page2{
-    height: 150vh;
+    /* height: 150vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -236,30 +255,34 @@ footer{
 #title-atelier2 pre{
     font-size: 22px;
 } 
+.atelier-photos img{
+    width: 350px;
+}
 .atelier-photos{
-    width: 30vw;
-    height: 45vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
+    text-align: center;
 } 
 
 .times{
+    margin: 3%;
     width: 80vw;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+}
+#title-atelier2 pre{
+    text-align: center;
 }
 .form-disign{
     background-color: #D2F2FF;
     border: none;
     border-radius: 10px;
-    width: 400px;
+    width: 343px;
     height: 50px;
 }
 
 #registration-form {
     height: 400PX;
-    width: 400px;
+    width: 343px;
     display: flex;
     align-items: end;
     flex-direction: column;
@@ -283,6 +306,7 @@ footer{
 #iframe-reserve{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     justify-content: space-around;
 }
 
@@ -401,37 +425,53 @@ footer{
 }
 
 @media only screen and (max-width:767px) {
-    /* .burger{
+    .burger{
         display: block;
-        cursor: pointer;
-        padding: 20px 5%;
     }
-    .burger .line{
-        width: 30px;
-        height: 3px;
-        background: white;
-        margin: 5px;
-    }
-    ul {
-        display: none;
-        position: absolute;
-        right:0px;
-        height: 30vh;
-        top: 10vh;
+    .navbar-nav {
         background-color: #00709C;
-        /* display: flex;
+        position: absolute;
+        top: 0;
+       
+        right: 0;
+          width: 100%;
+        height: 35vh;
+        transform: translateX(100%);
+    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in-out;
+    
+        opacity: 0;
+    
+        pointer-events: none;
+    
+        visibility: hidden;
+      }
+      .Dnav  {
         flex-direction: column;
-        
-        
-    }
-    .Dnav.active{
-        height: 30vh;
-        width: 100%;
-    }
-    #navbar li a{
-        color: #000000;
-        height: 30vh;
-    } */ 
+        gap: 1.8rem;
+      }
+      .Dnav a:link,
+      .Dnav a:visited {
+
+        font-weight: 600;
+        font-size: 2.3rem;
+      }
+    
+      .nav-open .navbar-nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+      }
+      .nav-open .icon-nav[name="close-outline"] {
+        display: block;
+      }
+      .nav-open .icon-nav[name="menu-outline"] {
+        display: none;
+      } 
     h2{
         font-size: 22px;
     }
@@ -572,5 +612,15 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    #title-atelier2 h2{
+        font-size: 18px;
+        font-weight: 200;
+    }
+    #title-atelier2 pre {
+        font-size: 10px;
+    }
+    #iframe-reserve{
+        
     }
 }
