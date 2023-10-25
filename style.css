@@ -288,14 +288,14 @@ footer{
 
 /*..............galerie..........*/
 .hero_area-galerie{
-    height: 70vh;
+    height: auto;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(images/galerie-header.jpg);
     background-size: cover;
     background-position: center;
 }
 
 .text-header-galerie h1{
-    padding-top: 1em;
+    /* padding-top: 1em; */
     font-size: 86px;
     font-weight: 300;
     display: flex;
@@ -334,7 +334,7 @@ footer{
 }
 
 #galerie-images{
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     justify-content: space-evenly;
@@ -512,5 +512,65 @@ footer{
     footer .logo img{
         width: 100px;
         height: 100px;
+    }
+    .text-header-galerie h1{
+        font-size: 40px;
+    }
+    #galerie-islamicage > div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #galerie-islamicage > div:first-child {
+        padding-top: 5%;
+        width: 400px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+    }
+    #galerie-islamicage > div:first-child img{
+        width: 300px;
+        height: 200px;
+    }
+    #galerie-islamicage h2{
+        padding-left: 2%;
+        font-weight: 300;
+    }
+    #galerie-islamicage p{
+        padding-top: 5%;
+        font-size: 16px;
+    }
+    #galerie-islamicage{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #page2{
+        height: 320px;
+    }
+    #page2 img{
+        width: 300px;
+        height: 300px;
+    }
+    .image2{
+        width: 300px;
+        height: 300px;
+    }
+    .images4{
+        width: 300px;
+        height: 300px;
+    }
+    /* #galerie-images{
+        height: ;
+    } */
+    #galerie-images >div:nth-child(2){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .SGimages{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
