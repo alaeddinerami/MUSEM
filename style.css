@@ -384,7 +384,7 @@ footer{
     overflow-y: auto;
 }
 .FAQ .contentFAQ.active .content{
-    height: 90px;
+    height: 150px;
 }
 
 #FAQ{
@@ -494,12 +494,9 @@ footer{
         flex-direction: column;
         margin-bottom: 5%;
     }
-    /* #FAQ{
-        height: 1000px;
-    } */
     #image-FAQ{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
     .FAQ-image img{
         width: 200px;
