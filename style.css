@@ -124,7 +124,7 @@ h3{
 }
 .artistes-photos-container{
     width: 85%;
-    height: 65%;
+    height: 30%;
     display: flex;
     justify-content: space-between;
 }
@@ -222,7 +222,7 @@ footer{
     background-position: center;
 }
 #atelier-page2{
-    height: 140vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     align-items: center;
