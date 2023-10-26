@@ -16,18 +16,16 @@
             /></a>
           </div>
           <nav class="navbar-nav">
-          <ul class="Dnav">
-            <li><a class="activ" href="index.html">Accueil</a></li>
-            <li><a href="galerie.html">Galerie</a></li>
-            <li><a href="atelier.html">Atelier</a></li>
-          </ul>
+            <ul class="Dnav">
+              <li><a href="index.html">Accueil</a></li>
+              <li><a href="galerie.html">Galerie</a></li>
+              <li><a class="activ" href="atelier.html">Atelier</a></li>
+            </ul>
           </nav>
-            <button class="burger">
-              <ion-icon class="icon-nav" name="menu-outline"></ion-icon>
-              <ion-icon class="icon-nav" name="close-outline"></ion-icon>
-            </button>
-           
-         
+          <button class="burger">
+            <ion-icon class="icon-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-nav" name="close-outline"></ion-icon>
+          </button>
         </div>
         <div class="text-header">
           <h1>
@@ -63,12 +61,11 @@
           <div class="atelier-photos">
             <img src="images/atelier3.jpg" alt="image" />
           </div> -->
-          
+
           <div class="atelier-photos">
             <img src="images/atelier1.jpg" alt="image" />
             <img src="images/atelier2.jpg" alt="image" />
             <img src="images/atelier3.jpg" alt="image" />
-
           </div>
         </div>
         <div>
@@ -91,29 +88,58 @@
           </pre>
         </div>
         <div id="iframe-reserve">
-        <div>
-          <form id="registration-form">
-            
-            <input type="text" class="form-disign" required placeholder="first-name">
-                        
-            <input type="text" class="form-disign" required placeholder="last-name">
-                
-            <input type="text" class="form-disign" required placeholder="CIN">
-            
-            <input type="email" class="form-disign" required placeholder="Email">
-    
-            <input type="tel" class="form-disign" required placeholder="Phone">
-            
-            <input type="submit" class="reserve-button" value="RESERVE">
-        </form>
+          <div>
+            <form id="registration-form">
+              <input
+                type="text"
+                class="form-disign first-name"
+                required
+                placeholder="first-name"
+              />
+
+              <input
+                type="text"
+                class="form-disign last-name"
+                required
+                placeholder="last-name"
+              />
+
+              <input
+                type="text"
+                class="form-disign CIN"
+                required
+                placeholder="CIN"
+              />
+
+              <input
+                type="email"
+                class="form-disign email"
+                required
+                placeholder="Email"
+              />
+
+              <input
+                type="tel"
+                class="form-disign Phone"
+                required
+                placeholder="Phone"
+              />
+              <button type="submit" class="reserve-button">RESERVE</button>
+            </form>
+          </div>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.5546513078543!2d-9.239689425859531!3d32.29694950836755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac21286236034b%3A0xb268c187666cf70c!2z2KfZhNmF2KrYrdmBINin2YTZiNi32YbZiiDZhNmE2K7YstmB!5e0!3m2!1sfr!2sma!4v1698059366801!5m2!1sfr!2sma"
+              width="350"
+              height="350"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
         </div>
-        <div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3372.5546513078543!2d-9.239689425859531!3d32.29694950836755!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xdac21286236034b%3A0xb268c187666cf70c!2z2KfZhNmF2KrYrdmBINin2YTZiNi32YbZiiDZhNmE2K7YstmB!5e0!3m2!1sfr!2sma!4v1698059366801!5m2!1sfr!2sma"
-           width="350" height="350" style="border:0;"
-           allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </section>
+      </section>
     </main>
     <footer>
       <div class="footer-container">
@@ -132,14 +158,15 @@
       </div>
       <p class="copyright">© 2023 Mucem. All Rights Reserved.</p>
     </footer>
+    <script src="./validation.js"></script>
     <script src="burger.js"></script>
     <script
-    type="module"
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-  ></script>
-  <script
-    nomodule
-    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-  ></script>
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
