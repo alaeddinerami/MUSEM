@@ -4,12 +4,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
     font-family: "tillana", sans-serif;
 }
-html{
-   overflow-x: hidden;  
-}
+
 body{
     background-color: #FFF8E3;
     
@@ -180,19 +177,19 @@ h3{
 #images-area {
     width: 80%;
     display: grid;
-    grid-template-columns: repeat(4, minmax(150px, 1fr)); /* Create a responsive grid */
-    gap: 10px; /* Adjust the gap between grid items as needed */
+    grid-template-columns: repeat(4, minmax(150px, 1fr)); 
+    gap: 10px;
 }
 
 .image {
-    overflow: hidden; /* Clip images within the grid cell */
+    overflow: hidden; 
 }
 
 .image img {
     border-radius: 10px;
-    width: 100%; /* Make images take up the full width of the grid cell */
-    height: 100%; /* Make images take up the full height of the grid cell */
-    object-fit: cover; /* Adjust how the image is displayed within the cell */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
 }
 #images-area > div:first-child{
     grid-column: 1/3;
@@ -620,7 +617,5 @@ footer{
     #title-atelier2 pre {
         font-size: 10px;
     }
-    #iframe-reserve{
-        
-    }
+    
 }
